@@ -1,0 +1,224 @@
+@import url(fontello-27da1908/css/fontello.css)
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+
+body {
+    background-color: #000099;
+}
+
+body > aside img {
+    max-width: 200px;
+    max-height: 250px;
+} 
+
+body > header, body > aside, body > section, body > footer {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #b9b9ba;
+    padding: 10px;
+    width: 90%;
+    max-width: 960px;
+    margin: 10px auto;
+}
+
+body > header {
+    height: 300px;
+    background: url(assets/my-logo.svg) no-repeat, url(images/database-header.jpg) no-repeat;
+    background-size: auto, 100% 100%;
+    position: relative;
+}   
+
+body > header h1 {
+    color: #fff;
+    font-size: 4em;
+    margin-top: 0;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Teko', sans-serif;
+}
+
+nav {
+    border: 3px solid white;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+nav ul, body > section > ul, form > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebcbf+0,6e7774+31,0a0e0a+75,0a0809+100 */
+    background: #aebcbf; /* Old browsers */
+    background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 31%, #0a0e0a 75%, #0a0809 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 31%,#0a0e0a 75%,#0a0809 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 31%,#0a0e0a 75%,#0a0809 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+,       Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+}
+
+nav li a:hover {
+    background: green;
+    transition: background 0.4s;
+}
+
+body > aside figure {
+    border: 1px solid black;
+    float: right;
+    animation: fadeIn 2s, rotate 2s;
+    animation-delay: 0s, 2s;
+}
+
+body > aside figcaption {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 5px 0px;
+}
+
+.content {
+    column-count: 3;
+}
+
+.content p:nth-child(1) {
+    margin-top: 0;
+}
+
+a[href$=pdf] {
+    background: url(assets/pdf.png) no-repeat right;
+    padding-right: 20px;
+}
+
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 7px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: coral;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+#products tbody td:nth-child(3):before {
+    content: '$';
+}
+
+
+/* Form styles */
+form > ul li {
+    margin: 15px 0px;
+}
+
+label {
+    display: block;
+}
+
+.labels-horizontal label {
+    display: inline;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    width: 400px;
+    max-width="400px"
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    height: 20px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    width: 75px;
+    height:40px;
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+*:required {
+    background: url(form_demo/images/red_asterisk.png) no-repeat 100% 5%;
+}
+
+*:required:valid {
+    background: url(form_demo/images/valid.png) no-repeat 100% 5%;
+}
+
+*:focus:invalid {
+    background: url(form_demo/images/invalid.png) no-repeat 100% 5%;
+}
+
+textarea
+
+
+/*media queries*/
+@media only screen and (max-device-width: 500px){
+    
+    .content {
+        column-count: 1;
+    }
+
+}
+
+@media only screen and (max-device-width: 700px){
+    
+    .content {
+        column-count: 2;
+    }
+
+}
+
+
+/* Block quotes */
+blockquote {
+    margin-left: 10px;
+    padding: 0;
+    color: grey;
+}
+
+/* Clickable things */
+.clickable {    
+    color: blue;
+    cursor: pointer;
+}
+    
+
+
+
+
+
+
+
+
+
